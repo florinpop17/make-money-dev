@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
-import Link from "next/Link";
+import Link from "next/link";
 
 import { Layout, HeaderNewsletter, PostsListItem } from "../components";
 import { sortByDate } from "../helpers";

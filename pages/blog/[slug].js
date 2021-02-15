@@ -4,7 +4,6 @@ import matter from "gray-matter";
 import marked from "marked";
 
 import { Layout, Sidebar, Newsletter } from "../../components";
-import { readTime } from "../../helpers";
 
 const Post = ({ frontmatter, content }) => {
     return (
