@@ -1,6 +1,6 @@
 const HeaderNewsletter = () => (
     <form
-        className="bg-purple-600 max-w-xl py-6 my-10 text-center mx-auto rounded-lg shadow-xl"
+        className="bg-purple-600 max-w-xl p-8 my-10 text-center mx-auto rounded-lg shadow-xl"
         action="https://app.convertkit.com/forms/1746325/subscriptions"
         method="post"
         data-sv-form="1746325"
@@ -11,11 +11,11 @@ const HeaderNewsletter = () => (
     >
         <ul data-element="errors" data-group="alert"></ul>
         <div data-element="fields" data-stacked="false"></div>
-        <h2 className="text-white text-4xl font-bold">
+        <h2 className="text-white text-3xl md:text-4xl font-bold">
             Want to stay updated? <br />
             <span className="text-purple-100">Sign up for the newsletter.</span>
         </h2>
-        <div className="my-5">
+        <div className="my-6">
             <input
                 className="py-4 px-6 rounded text-lg"
                 type="email"

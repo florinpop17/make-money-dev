@@ -10,6 +10,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            colors: {
+                twitter: "#1DA1F2",
+            },
             typography(theme) {
                 return {
                     dark: {

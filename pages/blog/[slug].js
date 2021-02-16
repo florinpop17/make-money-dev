@@ -5,14 +5,20 @@ import marked from "marked";
 
 import { Layout, Sidebar, Newsletter, Head } from "../../components";
 
-const Post = ({ frontmatter: { title, excerpt, date }, slug, content }) => {
+const Post = ({
+    frontmatter: { title, excerpt, date, cover_image },
+    slug,
+    content,
+}) => {
+    const url = `https://makemoney.dev/blog/${slug}`;
     return (
         <Layout>
             <Head
                 title={title}
                 description={excerpt}
-                url={`https://makemoney.dev/blog/${slug}`}
+                url={url}
                 date={date}
+                image={cover_image}
             />
             <div className="flex flex-col lg:flex-row">
                 <div className="lg:w-2/3">
@@ -24,7 +30,7 @@ const Post = ({ frontmatter: { title, excerpt, date }, slug, content }) => {
                         dangerouslySetInnerHTML={{ __html: marked(content) }}
                     />
                 </div>
-                <Sidebar />
+                <Sidebar url={url} title={title} />
             </div>
             <Newsletter />
         </Layout>
