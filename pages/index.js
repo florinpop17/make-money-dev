@@ -3,7 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 
-import { Layout, HeaderNewsletter, PostsListItem } from "../components";
+import { Layout, HeaderNewsletter, Post } from "../components";
 import { sortByDate } from "../helpers";
 
 const Index = ({ posts }) => (
@@ -21,7 +21,7 @@ const Index = ({ posts }) => (
         <div className="flex">
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
                 {posts.map((post) => (
-                    <PostsListItem
+                    <Post
                         post={post}
                         path="/blog/"
                         key={post.frontmatter.date}

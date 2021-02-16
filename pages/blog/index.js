@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
 
-import { Layout, Sidebar, PostsListItem } from "../../components";
+import { Layout, Post } from "../../components";
 import { sortByDate } from "../../helpers";
 
 const Blog = ({ posts }) => {
@@ -14,7 +14,7 @@ const Blog = ({ posts }) => {
             <div className="flex flex-col md:flex-row">
                 <div className="max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
                     {posts.map((post) => (
-                        <PostsListItem
+                        <Post
                             post={post}
                             path="/blog/"
                             key={post.frontmatter.date}
