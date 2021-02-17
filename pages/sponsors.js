@@ -48,7 +48,14 @@ const Sponsors = () => (
             </div>
 
             <p className="text-xl text-white mt-10">
-                Want to become a sponsor? <strong>Contact me on Twitter</strong>
+                Want to become a sponsor?{" "}
+                <a
+                    className="font-bold"
+                    target="_blank"
+                    href="https://twitter.com/makemoneydev"
+                >
+                    Contact me on Twitter
+                </a>
             </p>
         </div>
     </Layout>
