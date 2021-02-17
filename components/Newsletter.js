@@ -1,6 +1,6 @@
 const HeaderNewsletter = () => (
     <form
-        className="bg-purple-600 max-w-xl p-8 my-10 text-center mx-auto rounded-lg shadow-xl"
+        className="bg-purple-600 max-w-xl p-8 mt-10 text-center mx-auto rounded-lg shadow-xl"
         action="https://app.convertkit.com/forms/1746325/subscriptions"
         method="post"
         data-sv-form="1746325"
@@ -17,16 +17,13 @@ const HeaderNewsletter = () => (
         </h2>
         <div className="my-6">
             <input
-                className="py-4 px-6 rounded text-lg"
+                className="w-full py-3 px-6 rounded mb-4 sm:mb-0 sm:w-auto"
                 type="email"
                 placeholder="Your Email"
                 aria-label="Your email address"
                 name="email_address"
             />
-            <button
-                data-element="submit"
-                className="bg-purple-800 text-white font-semibold ml-2 py-4 px-6 rounded text-lg hover:bg-purple-700"
-            >
+            <button className="w-full bg-purple-700 dark:bg-purple-900 text-white font-semibold py-3 px-6 sm:w-auto sm:ml-2 rounded">
                 Subscribe
             </button>
         </div>

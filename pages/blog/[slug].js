@@ -22,11 +22,11 @@ const Post = ({
             />
             <div className="flex flex-col lg:flex-row">
                 <div className="lg:w-2/3">
-                    <h1 className="text-5xl font-bold mb-16 dark:text-white">
+                    <h1 className="text-4xl md:text-5xl font-bold mb-8 dark:text-white text-center md:text-left">
                         {title}
                     </h1>
                     <div
-                        className="prose dark:prose-dark prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none"
+                        className="prose dark:prose-dark prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none mx-auto md:ml-0"
                         dangerouslySetInnerHTML={{ __html: marked(content) }}
                     />
                 </div>

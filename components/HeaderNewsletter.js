@@ -14,18 +14,18 @@ const HeaderNewsletter = () => (
             <ul data-element="errors" data-group="alert" />
         </div>
         <div className="lg:flex lg:justify-center lg:items-center relative">
-            <h1 className="text-white text-3xl font-bold mb-4 md:mb-0">
+            <h1 className="text-white text-3xl md:text-4xl font-bold mb-4 md:mb-0">
                 Get updated when I write a new article.
             </h1>
-            <div className="my-2 ml-4">
+            <div className="my-2 sm:ml-4">
                 <input
-                    className="py-3 px-6 rounded"
+                    className="w-full py-3 px-6 rounded mb-4 sm:mb-0 sm:w-auto"
                     type="email"
                     placeholder="Your Email"
                     aria-label="Your email address"
                     name="email_address"
                 />
-                <button className="bg-purple-700 dark:bg-purple-900 text-white font-semibold ml-2 py-3 px-6 rounded">
+                <button className="w-full bg-purple-700 dark:bg-purple-900 text-white font-semibold py-3 px-6 sm:w-auto sm:ml-2 rounded">
                     Subscribe
                 </button>
             </div>

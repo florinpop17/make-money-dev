@@ -17,7 +17,7 @@ const Sidebar = ({ url, title }) => {
                 </h4>
             </a>
 
-            <div className="my-10">
+            <div className="my-10 mx-auto text-center">
                 <h3 className="text-xl font-bold dark:text-white">
                     Spread the message
                 </h3>
