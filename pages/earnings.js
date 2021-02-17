@@ -1,37 +1,6 @@
 import { Layout } from "../components/";
 
-const incomeSources = [
-    {
-        name: "YouTube",
-        amount: 690.13,
-        bgColor: "bg-red-600",
-        iconColor: "text-red-400",
-    },
-    {
-        name: "eBook",
-        amount: 5024.4,
-        bgColor: "bg-purple-600",
-        iconColor: "text-purple-400",
-    },
-    {
-        name: "Sponsors",
-        amount: 350,
-        bgColor: "bg-green-600",
-        iconColor: "text-green-400",
-    },
-    {
-        name: "Mentoring",
-        amount: 0,
-        bgColor: "bg-blue-600",
-        iconColor: "text-blue-400",
-    },
-    {
-        name: "Freelancing",
-        amount: 800,
-        bgColor: "bg-yellow-600",
-        iconColor: "text-yellow-400",
-    },
-];
+import income from "../income";
 
 const Earnings = () => (
     <Layout>
@@ -41,7 +10,7 @@ const Earnings = () => (
             </h1>
             <div className="container mx-auto mt-10 mb-4 space-y-6">
                 <div className="flex flex-wrap justify-center items-center">
-                    {incomeSources.map((source) => (
+                    {income.map((source) => (
                         <div
                             key={source.name}
                             className={`${source.bgColor} w-64 h-64 m-4 flex flex-col items-center justify-center rounded-lg shadow-xl relative group overflow-hidden cursor-pointer`}
@@ -54,11 +23,11 @@ const Earnings = () => (
                                     width="24"
                                     height="24"
                                     viewBox="0 0 24 24"
-                                    stroke-width="2.5"
+                                    strokeWidth="2.5"
                                     stroke="currentColor"
                                     fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
                                 >
                                     <path
                                         stroke="none"

@@ -12,8 +12,8 @@
     "autoprefixer": "^10.2.0",
     "next": "latest",
     "postcss": "^8.2.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "gray-matter": "^4.0.2",
