@@ -3,10 +3,10 @@ import Link from "next/link";
 import ThemeToggler from "./ThemeToggler";
 
 const urls = [
-    // { href: "/blog", label: "Blog" },
+    { href: "/blog", label: "Blog" },
     // { href: "/daily-updates", label: "Daily Updates" },
     // { href: "/inteviews", label: "Interviews" },
-    // { href: "/earnings", label: "Earnings" },
+    { href: "/earnings", label: "Earnings" },
     // { href: "/about", label: "About" },
 ];
 
@@ -25,17 +25,17 @@ const Nav = ({ darkTheme, setDarkTheme }) => {
                     {urls.map(({ href, label }) => (
                         <li key={`${href}${label}`}>
                             <Link href={href}>
-                                <a className="dark:text-white no-underline hover:underline">
+                                <a className="font-bold dark:text-white no-underline hover:underline">
                                     {label}
                                 </a>
                             </Link>
                         </li>
                     ))}
                 </ul>
-                <ThemeToggler
+                {/* <ThemeToggler
                     darkTheme={darkTheme}
                     setDarkTheme={setDarkTheme}
-                />
+                /> */}
             </ul>
         </nav>
     );
