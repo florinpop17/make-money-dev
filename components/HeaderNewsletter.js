@@ -17,7 +17,7 @@ const HeaderNewsletter = () => (
             <h1 className="text-white text-2xl md:text-3xl font-bold mb-4 md:mb-0">
                 Get updated when I write a new article.
             </h1>
-            <div className="my-2 sm:ml-4">
+            <div className="my-2 sm:ml-4 lg:flex">
                 <input
                     className="w-full py-3 px-6 rounded mb-4 sm:mb-0 sm:w-auto"
                     type="email"
