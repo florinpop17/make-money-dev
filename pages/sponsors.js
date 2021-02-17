@@ -3,7 +3,7 @@ import { Layout } from "../components";
 const Sponsors = () => (
     <Layout>
         <div className="text-center">
-            <h2 className="text-5xl font-bold text-white mb-10">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-10">
                 💎 Lifetime Sponsors
             </h2>
             <div>
@@ -20,7 +20,7 @@ const Sponsors = () => (
                 </a>
             </div>
 
-            <h3 className="text-4xl font-bold text-white my-10">
+            <h3 className="text-3xl lg:text-4xl font-bold text-white my-10">
                 🥇 Gold Sponsors
             </h3>
             <div className="flex flex-col md:flex-row items-center justify-center space-y-5 md:space-x-5 md:space-y-0">
@@ -32,7 +32,7 @@ const Sponsors = () => (
                 </div>
             </div>
 
-            <h4 className="text-3xl font-bold text-white my-10">
+            <h4 className="text-2xl lg:text-3xl font-bold text-white my-10">
                 🥈 Silver Sponsors
             </h4>
             <div className="flex flex-col md:flex-row items-center justify-center space-y-5 md:space-x-5 md:space-y-0">

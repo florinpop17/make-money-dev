@@ -5,10 +5,13 @@ import { income, latestUpdate } from "../income";
 const Earnings = () => (
     <Layout>
         <div className="flex flex-col items-center text-white">
-            <h1 className="text-6xl font-bold mt-20 text-center">
+            <h1 className="text-5xl lg:text-6xl font-bold lg:mt-20 text-center">
                 Income Streams
             </h1>
-            <div className="container mx-auto mt-10 mb-4 space-y-6">
+            <small className="inline-block text-center mt-4">
+                <i>Click event on tiles - WIP.</i>
+            </small>
+            <div className="container mx-auto mt-4 lg:mt-10 mb-4 space-y-6">
                 <div className="flex flex-wrap justify-center items-center">
                     {income.map((source) => (
                         <div
@@ -50,10 +53,10 @@ const Earnings = () => (
                     ))}
                 </div>
             </div>
-            <i>
+            <p>
                 <strong>2021</strong> revenue as of{" "}
                 <strong>{latestUpdate}</strong>.
-            </i>
+            </p>
         </div>
     </Layout>
 );
