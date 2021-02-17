@@ -1,6 +1,6 @@
 import { Layout } from "../components/";
 
-import income from "../income";
+import { income, latestUpdate } from "../income";
 
 const Earnings = () => (
     <Layout>
@@ -50,7 +50,7 @@ const Earnings = () => (
                     ))}
                 </div>
             </div>
-            <i>Income in 2021 as of 16th February.</i>
+            <i>2021 revenue as of {latestUpdate}.</i>
         </div>
     </Layout>
 );

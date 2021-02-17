@@ -6,6 +6,8 @@
 
 // const { content: YouTube } = matter(youtubeMD);
 
+const latestUpdate = "February 16th";
+
 const income = [
     {
         name: "YouTube",
@@ -40,4 +42,4 @@ const income = [
     },
 ];
 
-export default income;
+export { income, latestUpdate };
