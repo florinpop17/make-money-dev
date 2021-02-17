@@ -1,7 +1,5 @@
 import Link from "next/link";
 
-import { formatDate } from "../helpers";
-
 const PostsListItem = ({ post, path }) => (
     <Link href={path + post.slug}>
         <a
@@ -18,7 +16,7 @@ const PostsListItem = ({ post, path }) => (
             <div className="bg-white dark:bg-purple-900 p-6 flex flex-col">
                 <div className="flex space-x-1 text-sm text-gray-500 dark:text-gray-300">
                     <time dateTime={post.frontmatter.date}>
-                        {formatDate(post.frontmatter.date)}
+                        {post.frontmatter.date}
                     </time>
                 </div>
                 <div className="mt-2">
