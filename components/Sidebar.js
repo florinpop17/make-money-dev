@@ -11,7 +11,7 @@ const Sidebar = ({ url, title }) => {
                 rel="noopener noreferrer"
                 href="https://gum.co/makemoneydev"
             >
-                <img src="/ebook-cover.png" alt="book cover" />
+                <img src="/ebook-cover.jpg" alt="book cover" />
                 <h4 className="text-lg text-white font-semibold text-center p-4">
                     Ten++ Ways to Make Money as a Developer - eBook
                 </h4>
