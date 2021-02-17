@@ -2,12 +2,20 @@ import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
 
-import { Layout, Post } from "../../components";
+import { Layout, Head, Post } from "../../components";
 import { sortByDate } from "../../helpers";
 
 const Blog = ({ posts }) => {
     return (
         <Layout>
+            <Head
+                title={"Blog"}
+                description={
+                    "Read about how I monetize my coding skills while I'm constantly learning and building in public."
+                }
+                url="https://makemoney.dev/blog"
+                // image={"TO BE ADDED"}
+            />
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl text-center">
                 Articles
             </h1>

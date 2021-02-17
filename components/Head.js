@@ -76,7 +76,11 @@ const Head = ({ children, title, description, keywords, url, date, image }) => {
                 name="twitter:creator"
                 content="@makemoneydev"
             />
-            <meta key="twitter:title" name="twitter:title" content={title} />
+            <meta
+                key="twitter:title"
+                name="twitter:title"
+                content={title ? `${title} | MakeMoney.Dev` : "MakeMoney.Dev"}
+            />
             <meta
                 key="twitter:description"
                 name="twitter:description"

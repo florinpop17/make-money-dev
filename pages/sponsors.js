@@ -1,7 +1,13 @@
-import { Layout } from "../components";
+import { Layout, Head } from "../components";
 
 const Sponsors = () => (
     <Layout>
+        <Head
+            title={"Sponsors"}
+            description={"Displaying the sponsors of this project"}
+            url="https://makemoney.dev/sponsors"
+            // image={"TO BE ADDED"}
+        />
         <div className="text-center">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-10">
                 💎 Lifetime Sponsors
