@@ -14,19 +14,17 @@ const urls = [
 const Nav = ({ darkTheme, setDarkTheme }) => {
     return (
         <nav>
-            <ul className="flex justify-between items-center py-8">
-                <li>
-                    <Link href="/">
-                        <a className="text-purple-800 text-2xl dark:text-gray-100 font-bold no-underline">
-                            MakeMoneyDev
-                        </a>
-                    </Link>
-                </li>
-                <ul className="flex justify-between items-center space-x-4 ml-auto">
+            <div className="flex flex-col md:flex-row justify-between items-center py-8">
+                <Link href="/">
+                    <a className="text-purple-800 text-2xl dark:text-gray-100 font-bold no-underline">
+                        MakeMoneyDev
+                    </a>
+                </Link>
+                <ul className="flex justify-between items-center space-x-4 mx-auto md:mr-0 mt-4 md:mt-0">
                     {urls.map(({ href, label }) => (
                         <li key={`${href}${label}`}>
                             <Link href={href}>
-                                <a className="font-bold dark:text-gray-100 no-underline hover:underline">
+                                <a className="font-bold text-gray-400 hover:text-gray-100">
                                     {label}
                                 </a>
                             </Link>
@@ -37,7 +35,7 @@ const Nav = ({ darkTheme, setDarkTheme }) => {
                     darkTheme={darkTheme}
                     setDarkTheme={setDarkTheme}
                 /> */}
-            </ul>
+            </div>
         </nav>
     );
 };

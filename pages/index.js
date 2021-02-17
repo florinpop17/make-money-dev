@@ -13,9 +13,9 @@ const Index = ({ posts }) => (
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl text-center">
                 Latest Articles
             </h1>
-            <p className="text-xl text-gray-500 dark:text-gray-200 mt-3 max-w-2xl mx-auto sm:mt-4 text-center">
-                Read about how I monetize my coding skills while <br /> I'm
-                constantly learning and building in public.
+            <p className="text-xl text-gray-500 dark:text-gray-200 mt-3 max-w-xl mx-auto sm:mt-4 text-center">
+                Read about how I monetize my coding skills while I'm constantly
+                learning and building in public.
             </p>
         </div>
         <div className="flex">
