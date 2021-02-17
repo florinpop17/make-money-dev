@@ -6,19 +6,19 @@
 
 // const { content: YouTube } = matter(youtubeMD);
 
-const latestUpdate = "February 16th";
+const latestUpdate = "February 17th";
 
 const income = [
     {
         name: "YouTube",
-        amount: 690.13,
+        amount: 703.84,
         bgColor: "bg-red-600",
         iconColor: "text-red-400",
         // details: YouTube,
     },
     {
         name: "eBook",
-        amount: 5024.4,
+        amount: 5144.4,
         bgColor: "bg-purple-600",
         iconColor: "text-purple-400",
     },

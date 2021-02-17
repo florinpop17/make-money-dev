@@ -50,7 +50,10 @@ const Earnings = () => (
                     ))}
                 </div>
             </div>
-            <i>2021 revenue as of {latestUpdate}.</i>
+            <i>
+                <strong>2021</strong> revenue as of{" "}
+                <strong>{latestUpdate}</strong>.
+            </i>
         </div>
     </Layout>
 );
