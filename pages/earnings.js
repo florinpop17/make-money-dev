@@ -4,27 +4,32 @@ const incomeSources = [
     {
         name: "YouTube",
         amount: 690.13,
-        color: "red",
+        bgColor: "bg-red-600",
+        iconColor: "text-red-400",
     },
     {
         name: "eBook",
         amount: 5024.4,
-        color: "purple",
+        bgColor: "bg-purple-600",
+        iconColor: "text-purple-400",
     },
     {
         name: "Sponsors",
         amount: 350,
-        color: "green",
+        bgColor: "bg-green-600",
+        iconColor: "text-green-400",
     },
     {
         name: "Mentoring",
         amount: 0,
-        color: "blue",
+        bgColor: "bg-blue-600",
+        iconColor: "text-blue-400",
     },
     {
         name: "Freelancing",
         amount: 800,
-        color: "yellow",
+        bgColor: "bg-yellow-600",
+        iconColor: "text-yellow-400",
     },
 ];
 
@@ -39,10 +44,10 @@ const Earnings = () => (
                     {incomeSources.map((source) => (
                         <div
                             key={source.name}
-                            className={`bg-${source.color}-600 w-64 h-64 m-4 flex flex-col items-center justify-center rounded-lg shadow-xl relative group overflow-hidden cursor-pointer`}
+                            className={`${source.bgColor} w-64 h-64 m-4 flex flex-col items-center justify-center rounded-lg shadow-xl relative group overflow-hidden cursor-pointer`}
                         >
                             <span
-                                className={`absolute top-2 right-2 text-${source.color}-400`}
+                                className={`absolute top-2 right-2 ${source.iconColor}`}
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
