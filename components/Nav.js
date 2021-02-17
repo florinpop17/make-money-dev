@@ -7,6 +7,7 @@ const urls = [
     // { href: "/daily-updates", label: "Daily Updates" },
     // { href: "/inteviews", label: "Interviews" },
     { href: "/earnings", label: "Earnings" },
+    { href: "/sponsors", label: "Sponsors" },
     // { href: "/about", label: "About" },
 ];
 
@@ -16,7 +17,7 @@ const Nav = ({ darkTheme, setDarkTheme }) => {
             <ul className="flex justify-between items-center py-8">
                 <li>
                     <Link href="/">
-                        <a className="text-purple-800 text-2xl dark:text-white font-bold no-underline">
+                        <a className="text-purple-800 text-2xl dark:text-gray-100 font-bold no-underline">
                             MakeMoneyDev
                         </a>
                     </Link>
@@ -25,7 +26,7 @@ const Nav = ({ darkTheme, setDarkTheme }) => {
                     {urls.map(({ href, label }) => (
                         <li key={`${href}${label}`}>
                             <Link href={href}>
-                                <a className="font-bold dark:text-white no-underline hover:underline">
+                                <a className="font-bold dark:text-gray-100 no-underline hover:underline">
                                     {label}
                                 </a>
                             </Link>

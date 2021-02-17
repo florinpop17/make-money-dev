@@ -10,10 +10,10 @@ const Index = ({ posts }) => (
     <Layout>
         <HeaderNewsletter />
         <div className="mt-16 mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 sm:text-5xl text-center">
+            <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl text-center">
                 Latest Articles
             </h1>
-            <p className="text-xl text-gray-500 dark:text-gray-300 mt-3 max-w-2xl mx-auto sm:mt-4 text-center">
+            <p className="text-xl text-gray-500 dark:text-gray-200 mt-3 max-w-2xl mx-auto sm:mt-4 text-center">
                 Read about how I monetize my coding skills while <br /> I'm
                 constantly learning and building in public.
             </p>
