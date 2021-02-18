@@ -18,7 +18,7 @@ const Post = ({
                 description={excerpt}
                 url={url}
                 date={date}
-                image={cover_image}
+                image={"https://makemoney.dev" + cover_image}
             />
             <div className="flex flex-col lg:flex-row">
                 <div className="lg:w-2/3">
