@@ -14,18 +14,17 @@ const Sponsors = () => (
                 💎 Lifetime Sponsors
             </h2>
             <div>
-                <Link href="/freelancing-bundle">
-                    <a
-                        className="inline-block bg-purple-600 max-w-3xl md:h-64 bg-cover rounded shadow-xl overflow-hidden"
-                        target="_blank"
-                    >
-                        <img
-                            className="w-full h-full object-cover"
-                            src="/images/freelancing-bundle-banner.jpg"
-                            alt="Kyle"
-                        />
-                    </a>
-                </Link>
+                <a
+                    className="inline-block bg-purple-600 max-w-3xl md:h-64 bg-cover rounded shadow-xl overflow-hidden"
+                    target="_blank"
+                    href="https://studywebdevelopment.com/freelancing.html"
+                >
+                    <img
+                        className="w-full h-full object-cover"
+                        src="/images/freelancing-bundle-banner.jpg"
+                        alt="Kyle"
+                    />
+                </a>
             </div>
 
             <h3 className="text-3xl lg:text-4xl font-bold text-white my-10">

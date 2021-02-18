@@ -29,7 +29,7 @@ Can safely say that the entire revenue in 2021 _so far_ is due to my work in 202
         iconColor: "text-purple-400",
         details: `
 ## eBook Revenue
-[Ten++ Ways to Make Money as a Developer](https://makemoney.dev/gumroad-ebook)
+[Ten++ Ways to Make Money as a Developer](https://gum.co/makemoneydev)
 
 Started the pre-sales for this eBook on 21st August 2020 and launched it on 14th December the same year. I tried a few marketing strategies _borrowed_ from Daniel Vasallo but it didn't work out so great for me.
 
