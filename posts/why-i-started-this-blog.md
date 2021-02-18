@@ -2,7 +2,7 @@
 title: "Why I Started This Blog"
 date: "17 February 2021"
 excerpt: "Sharing my journey as a developer, teacher and content creator."
-cover_image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+cover_image: "/images/posts/why-i-started-this-blog.png"
 ---
 
 I expect (and hope) that this blog will go a long way, but who knows what will actually happen in the future. Nevertheless, we'll have this article as a reminder of why I started this project in the first place.
