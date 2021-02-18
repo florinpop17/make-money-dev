@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Sidebar = ({ url, title }) => {
     const socials = {
         twitter: `https://twitter.com/share?text=${title} via @makemoneydev&url=${url}`,
@@ -5,18 +7,17 @@ const Sidebar = ({ url, title }) => {
 
     return (
         <div className="lg:w-1/3 p-6">
-            <a
-                className="block bg-purple-500 rounded-lg shadow-lg overflow-hidden max-w-xs mx-auto hover:bg-purple-700 transform transition hover:-translate-y-1"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://gum.co/makemoneydev"
-            >
-                <img src="/ebook-cover.jpg" alt="book cover" />
-                <h4 className="text-lg text-white font-semibold text-center p-4">
-                    Ten++ Ways to Make Money as a Developer - eBook
-                </h4>
-            </a>
-
+            <Link href="/gumroad-ebook">
+                <a
+                    className="block bg-purple-500 rounded-lg shadow-lg overflow-hidden max-w-xs mx-auto hover:bg-purple-700 transform transition hover:-translate-y-1"
+                    target="_blank"
+                >
+                    <img src="/ebook-cover.jpg" alt="book cover" />
+                    <h4 className="text-lg text-white font-semibold text-center p-4">
+                        Ten++ Ways to Make Money as a Developer - eBook
+                    </h4>
+                </a>
+            </Link>
             <div className="my-10 mx-auto text-center">
                 <h3 className="text-xl font-bold dark:text-white">
                     Spread the message
