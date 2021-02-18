@@ -2,7 +2,17 @@
 import * as React from "react";
 import NextHead from "next/head";
 
-const Head = ({ children, title, description, keywords, url, date, image }) => {
+const defaultImage = "https://makemoney.dev/images/homepage.png";
+
+const Head = ({
+    children,
+    title,
+    description,
+    keywords,
+    url,
+    date,
+    image = defaultImage,
+}) => {
     return (
         <NextHead>
             <meta key="charSet" charSet="UTF-8" />

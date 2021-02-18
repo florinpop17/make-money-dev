@@ -7,7 +7,7 @@ const Sponsors = () => (
             title={"Sponsors"}
             description={"Displaying the sponsors of this project"}
             url="https://makemoney.dev/sponsors"
-            // image={"TO BE ADDED"}
+            image="https://makemoney.dev/images/sponsors-page.png"
         />
         <div className="text-center">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-10">

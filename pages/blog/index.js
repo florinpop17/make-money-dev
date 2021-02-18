@@ -14,7 +14,7 @@ const Blog = ({ posts }) => {
                     "Read about how I monetize my coding skills while I'm constantly learning and building in public."
                 }
                 url="https://makemoney.dev/blog"
-                // image={"TO BE ADDED"}
+                image="https://makemoney.dev/images/blog-page.png"
             />
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl text-center">
                 Articles

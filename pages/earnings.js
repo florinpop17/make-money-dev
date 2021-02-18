@@ -9,7 +9,7 @@ const Earnings = () => {
                 title={"Earnings"}
                 description={"Earnings raport for my income sources"}
                 url="https://makemoney.dev/earnings"
-                // image={"TO BE ADDED"}
+                image="https://makemoney.dev/images/earnings-page.png"
             />
             <div className="flex flex-col items-center text-white">
                 <h1 className="text-5xl lg:text-6xl font-bold lg:mt-20 text-center">
