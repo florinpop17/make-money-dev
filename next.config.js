@@ -4,12 +4,12 @@ module.exports = {
             {
                 source: "/gumroad-ebook",
                 destination: "https://gum.co/makemoneydev",
-                permanent: false,
+                permanent: true,
             },
             {
                 source: "/freelancing-bundle",
                 destination: "https://studywebdevelopment.com/freelancing.html",
-                permanent: false,
+                permanent: true,
             },
         ];
     },
