@@ -18,9 +18,9 @@ module.exports = {
                 return {
                     dark: {
                         css: {
-                            color: theme("colors.gray.300"),
+                            color: theme("colors.gray.200"),
                             '[class~="lead"]': {
-                                color: theme("colors.gray.400"),
+                                color: theme("colors.gray.300"),
                             },
                             a: { color: theme("colors.gray.100") },
                             strong: { color: theme("colors.gray.100") },
@@ -30,7 +30,7 @@ module.exports = {
                             hr: { borderColor: theme("colors.gray.800") },
                             blockquote: {
                                 color: theme("colors.gray.100"),
-                                borderLeftColor: theme("colors.gray.800"),
+                                borderLeftColor: theme("colors.gray.100"),
                             },
                             h1: { color: theme("colors.gray.100") },
                             h2: { color: theme("colors.gray.100") },

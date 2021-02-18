@@ -26,7 +26,7 @@ const Post = ({
                         {title}
                     </h1>
                     <div
-                        className="prose dark:prose-dark prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none mx-auto md:ml-0"
+                        className="prose dark:prose-dark prose-lg xl:prose-xl max-w-none mx-auto md:ml-0"
                         dangerouslySetInnerHTML={{ __html: marked(content) }}
                     />
                 </div>
