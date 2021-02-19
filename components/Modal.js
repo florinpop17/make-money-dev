@@ -3,7 +3,7 @@ const Modal = ({ children, bgColor, iconColor, handleCloseModal }) => (
         <div
             className={`${
                 bgColor ? bgColor : "bg-gray-700"
-            } max-w-2xl m-8 p-8 text-white rounded shadow-xl relative`}
+            } max-w-2xl max-h-screen m-8 p-8 text-white rounded shadow-xl relative overflow-y-auto`}
         >
             {children}
             <button
