@@ -50,7 +50,12 @@ const EarningsTile = ({
             </span>
             <div className="bg-gradient-to-r from-transparent via-white to-transparent w-full h-full absolute top-0 left-0 opacity-30 transform transition-transform duration-700 -translate-x-64 -translate-y-64 scale-150 rotate-45 group-hover:translate-x-64 group-hover:translate-y-64" />
             <h2 className="text-4xl font-semibold">{name}</h2>
-            <h3 className="text-5xl font-bold">${amount}</h3>
+            <h3 className="text-5xl font-bold">
+                {new Intl.NumberFormat("en-EN", {
+                    style: "currency",
+                    currency: "USD",
+                }).format(amount)}
+            </h3>
         </div>
     );
 };
