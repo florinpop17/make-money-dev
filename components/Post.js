@@ -13,7 +13,7 @@ const PostsListItem = ({ post, path }) => (
                     alt={post.frontmatter.title}
                 />
             </div>
-            <div className="bg-white dark:bg-purple-900 p-6 flex flex-col">
+            <div className="bg-white dark:bg-purple-900 p-6 flex flex-1 flex-col">
                 <div className="flex space-x-1 text-sm text-gray-500 dark:text-gray-300">
                     <time dateTime={post.frontmatter.date}>
                         {post.frontmatter.date}

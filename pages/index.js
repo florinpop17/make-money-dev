@@ -29,13 +29,13 @@ const Index = ({ posts }) => (
                 ))}
             </div>
         </div>
-        <div>
+        {/* <div>
             <Link href="/blog">
                 <button className="block border-purple-500 bg-purple-700 font-semibold text-white my-10 mx-auto py-4 px-6 rounded hover:bg-purple-800">
                     Read All Articles
                 </button>
             </Link>
-        </div>
+        </div> */}
     </Layout>
 );
 
