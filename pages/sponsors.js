@@ -58,11 +58,11 @@ const Sponsors = () => (
                 Want to become a sponsor?{" "}
                 <a
                     className="font-bold"
-                    target="_blank"
-                    href="https://twitter.com/makemoneydev"
+                    href="mailto:florin@makemoney.dev?subject=Sponsorship deal"
                 >
-                    Contact me on Twitter
+                    Contact me
                 </a>
+                .
             </p>
         </div>
     </Layout>
