@@ -13,7 +13,7 @@ const Earnings = () => {
             />
             <div className="flex flex-col items-center text-white">
                 <h1 className="text-5xl lg:text-6xl font-bold lg:mt-20 text-center">
-                    Income Streams
+                    2021 Income Streams
                 </h1>
                 <div className="container mx-auto mt-4 lg:mt-10 mb-4 space-y-6">
                     <div className="flex flex-wrap justify-center items-center">
@@ -22,10 +22,9 @@ const Earnings = () => {
                         ))}
                     </div>
                 </div>
-                <p>
-                    <strong>2021</strong> revenue as of{" "}
-                    <strong>{latestUpdate}</strong>.
-                </p>
+                <i>
+                    Last update: <strong>{latestUpdate}</strong>.
+                </i>
             </div>
         </Layout>
     );

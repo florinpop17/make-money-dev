@@ -1,4 +1,4 @@
-const latestUpdate = "February 22nd";
+const latestUpdate = "February 22";
 
 const income = [
     {

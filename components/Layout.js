@@ -9,10 +9,8 @@ const Layout = ({ children }) => {
     return (
         <div className={darkTheme ? "dark" : ""}>
             <Head>
-                <script
-                    async
-                    src="https://f.convertkit.com/ckjs/ck.5.js"
-                ></script>
+                <script async src="https://f.convertkit.com/ckjs/ck.5.js" />
+                <script async src="/scripts/crisp.js" />
             </Head>
             <div className="flex flex-col min-h-screen bg-white dark:bg-gray-800 p-4">
                 <div className="container mx-auto max-w-3xl lg:max-w-5xl">

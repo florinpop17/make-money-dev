@@ -1,5 +1,5 @@
 const Footer = () => (
-    <footer className="w-full bg-purple-800 text-white p-3 mt-10 -mb-4 rounded-t-lg text-center">
+    <footer className="container bg-purple-800 text-white p-3 mx-auto mt-10 -mb-4 rounded-t-lg text-center">
         <p>
             @ {new Date().getFullYear()} MakeMoneyDev by{" "}
             <a
