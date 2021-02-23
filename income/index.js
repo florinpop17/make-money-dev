@@ -48,6 +48,8 @@ I also added several affiliates but most of them didn't make any sales.
         details: `
 ## Sponsors Revenue
 I didn't do many sponsorship deals up until now (only a Twitter sponsorship), but I'm going to accept sponsors for this blog, Twitter posts and my YouTube channel as well.
+
+_Are you looking to become a sponsor? <a href="mailto:florin@makemoney.dev?subject=Sponsorship deal">Contact me</a>._
 `,
     },
     {
@@ -58,6 +60,8 @@ I didn't do many sponsorship deals up until now (only a Twitter sponsorship), bu
         details: `
 ## Mentoring Revenue
 I didn't do any mentoring sessions this year, but I'm planning to. I just want to finish the current projects first.
+
+_If you are interested in paid mentorship, feel free to <a href="mailto:florin@makemoney.dev?subject=Mentorship">contact me</a>._
 `,
     },
     {
@@ -68,6 +72,8 @@ I didn't do any mentoring sessions this year, but I'm planning to. I just want t
         details: `
 ## Freelancing Revenue
 So far in 2021 I only took on a single small project (1-2 days of work). In case similar opportunities arise, I'm going to take them, but I'm currently not looking to get involved in big projects.
+
+_Do you want work with me? <a href="mailto:florin@makemoney.dev?subject=Freelancing oportunity">Send me an email</a>._
 `,
     },
 ];
