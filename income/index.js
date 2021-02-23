@@ -3,7 +3,7 @@ const latestUpdate = "February 22";
 const income = [
     {
         name: "YouTube",
-        amount: 785.06,
+        amount: 798.87,
         bgColor: "bg-red-600",
         iconColor: "text-red-400",
         details: `
@@ -13,7 +13,7 @@ Channel Link: [Florin Pop](https://youtube.com/florinpop)
 I started this channel in November 2019. Uploaded 240+ coding videos and Live Streams, but then I burned out a bit and stopped uploading so much. In 2021 I want to get back to making at least 2 videos per week (on average).
 
 ### 2021
-**Video Views**: 275.3k
+**Video Views**: 280.9k
 
 Can safely say that the entire revenue in 2021 _so far_ is due to my work in 2020.
 `,
@@ -49,7 +49,7 @@ I also added several affiliates but most of them didn't make any sales.
 ## Sponsors Revenue
 I didn't do many sponsorship deals up until now (only a Twitter sponsorship), but I'm going to accept sponsors for this blog, Twitter posts and my YouTube channel as well.
 
-_Are you looking to become a sponsor? <a href="mailto:florin@makemoney.dev?subject=Sponsorship deal">Contact me</a>._
+_Want to become a sponsor? <a href="mailto:florin@makemoney.dev?subject=Sponsorship deal">Contact me</a>._
 `,
     },
     {
