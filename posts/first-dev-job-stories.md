@@ -119,6 +119,16 @@ _My tech career started with Java and Angular. The interview process for my firs
 
 _I hadn't heard back on any of the 5 positions I applied for at different divisions for this company so I showed up in a suit and tie to follow up on them. That scored me the interview, which was a phone screen from HR, initial talk with the Director of Engineering, a take home assessment then meet the team for a personality culture fit. I didn't know PHP, MongoDB, XSLT or anything about REST API's so I spent at least 35 hours that week learning and doing the take home assessment and then in the meet the team interview I pushed that I'm willing to learn anything and I think that's what landed me the job._
 
+## Dennis Ivy
+
+**[Twitter](https://twitter.com/dennisivy11)**
+
+_In 2017 I was working for a forensics laboratory as head of marketing. The company was using an outdated system to manage lab samples and was activity looking for someone to build out an entirely new system with a budget of about $70,000 to start._
+
+_At the time the only coding experience I had was some HTML and CSS skills for customizing Wordpress websites. I saw this as my chance to learn how to code and land my first gig, so what did I do? I spent every free moment I had for the next 3 months reading every book I could find and watching YouTube videos. Most days I woke up 2 hours before work to code and then stayed up to 2-3 in the morning studying._
+
+_Well after those 3 months I felt confident enough to draw up a prototype of what I had in mind for the new system and pitched the concept at the next company meeting. Long story short, I landed the gig and spent the next two years building and maintaining the system before I sold it to the company for $41,000._
+
 ## Eddy Vinch
 
 **[Twitter](https://twitter.com/EddyVinckk)**
