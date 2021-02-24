@@ -135,7 +135,7 @@ _At the time the only coding experience I had was some HTML and CSS skills for c
 
 _Well after those 3 months I felt confident enough to draw up a prototype of what I had in mind for the new system and pitched the concept at the next company meeting. Long story short, I landed the gig and spent the next two years building and maintaining the system before I sold it to the company for $41,000._
 
-## Eddy Vinch
+## Eddy Vinck
 
 **[Twitter](https://twitter.com/EddyVinckk)**
 
@@ -191,6 +191,18 @@ _In total it took me maybe a few weeks to land my first job after starting with 
 
 _First is to have a good portfolio website with links to your GitHub projects and websites. Even if they're demo sites, anything that will help potential employers see what your skill set is is a good thing. Try to make your websites look as polished and professional as you can. Take advantage of frameworks like Bootstrap or Tailwind if your design/CSS skills aren't your forte. Keep your GitHub organized with good readme's to make it easy for employers to quickly assess your work._
 
+## Lors
+
+**[Twitter](https://twitter.com/miss_lorsx)**
+
+_I prepared for my first job by knowing basics of the technologies that were required for that role. Requirements were HTML, CSS JS & PHP. I had no knowledge of PHP prior to my interview, I had projects to display and a portfolio also. These projects weren’t the best, but they demonstrated my passion for learning and having a go which is what employers love to see. It took me 3 months to get my first role. I was approached by a recruiter local to me & introduced to the company. We had an interview scheduled for the following week (on my birthday!) and it consisted of questions on the requirements above, as well as accessibility, design & photoshop, but no technical test. I love my job now I’ve settled in & I also help out in the family business with website design & images for an E-commerce & Magento site._
+
+## Luc Constantin
+
+**[Twitter](https://twitter.com/accolades_dev)**
+
+_I am coming from 12 years of logistics and at 42 after 9 months I landed my first job. I studied frontend development during this time. With zero knowledge into programming I had to schedule between 3 - 5 hours per day so that I could get the job. The interview process was smooth and after a week I received a full time job as a frontend developer._
+
 ## Mads Brodt
 
 **[Twitter](https://twitter.com/madsbrodt)**
@@ -226,6 +238,12 @@ _My advice is to be patient and consistent, this is a long process for most peop
 **[Twitter](https://twitter.com/shookcodes)**
 
 _I spent 8 years as a recruiter, 2 of which was in the IT field; during that time I learned the lingo and a couple of developers took time out of their day to teach me the basics (one showed me how to make a calculator using C#). I landed a role at my spouse's company as a tech admin, where I got into PowerShell. It's a small company, and when we updated systems, they needed someone to learn the languages to maintain and customize the system (JavaScript - including jQuery - and PL/SQL). I told them I would do it, and that led me into my current position. Now I'm focusing on solidifying my knowledge so I can advance my career further, but my first dev role has been a great stepping stone - I took it upon myself to learn new languages, and I'm excited to see where I end up in the next few years._
+
+## Tadas Petra
+
+**[Twitter](https://twitter.com/tadaspetra)**
+
+_My first Dev role was as a Software Engineer at a truck manufacturing company. I developed software that is controlling thousands of semi trucks in the US. The way I got this job is pretty boring. I went to a job fair at my school to look for an internship. I ended up being an intern there, my last summer before I graduated. After I finished the internship, they offered me a full time position starting the summer after. And I took it!_
 
 ## Tom Burdak
 
