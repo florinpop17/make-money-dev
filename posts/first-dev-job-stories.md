@@ -59,6 +59,12 @@ _For me I was very proactive about getting my first developer Job. I was in chan
 
 _I used to be an opera singer and had been learning web development for about a year. I created a video introducing myself and my skillset, and posted it to Twitter. It was forwarded on to the managing director of my company, who immediately messaged me with information and asked for a chat. After talking to him and then having another meeting with HR and my team lead, I got an offer the very next day and began work as a Junior Software Engineer_
 
+## Annie
+
+**[Twitter](https://twitter.com/anniebombanie_)**
+
+_My bootcamp had something called "Industry Day", a kind of potential dev <> employer speed dating event. Us students sat at tables with our laptops and gave 2 min pitches; introducing ourselves and explaining our favourite project to potential employers/hiring partners. The bell rings. They move around. I had a couple of interviews as a result, and accepted an offer two weeks later!_
+
 ## Bivor
 
 **[Twitter](https://twitter.com/beevorr)**

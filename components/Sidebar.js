@@ -4,7 +4,7 @@ const Sidebar = ({ url, title }) => {
     };
 
     return (
-        <div className="lg:w-1/3 p-6">
+        <div className="lg:w-1/3 lg:pl-6">
             <a
                 href="https://gum.co/makemoneydev"
                 className="block bg-purple-500 rounded-lg shadow-lg overflow-hidden max-w-xs mx-auto hover:bg-purple-700 transform transition hover:-translate-y-1"
