@@ -1,7 +1,7 @@
 ---
 title: "My First Developer Job - 30 Stories"
 date: "24 February 2021"
-excerpt: "Stories of developers with different backgrounds and how they got their first dev job."
+excerpt: "Stories of developers having different backgrounds on how they got their first dev job."
 cover_image: "/images/posts/first-dev-job-stories.png"
 ---
 
