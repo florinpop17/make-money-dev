@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const PostsListItem = ({ post, path }) => (
     <Link href={path + post.slug}>
@@ -7,10 +8,13 @@ const PostsListItem = ({ post, path }) => (
             key={post.slug}
         >
             <div>
-                <img
+                <Image
                     className="h-48 w-full object-cover"
                     src={post.frontmatter.cover_image}
                     alt={post.frontmatter.title}
+                    width={1024}
+                    height={512}
+                    layout="responsive"
                 />
             </div>
             <div className="bg-white dark:bg-purple-800 p-6 flex flex-1 flex-col">
