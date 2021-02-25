@@ -21,12 +21,6 @@ const Layout = ({ children }) => {
                             async
                             defer
                             data-domain="makemoney.dev"
-                            src="https://plausible.io/js/plausible.js"
-                        ></script>
-                        <script
-                            async
-                            defer
-                            data-domain="makemoney.dev"
                             src="https://plausible.io/js/plausible.outbound-links.js"
                         ></script>
                     </>
