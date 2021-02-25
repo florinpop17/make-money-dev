@@ -10,6 +10,12 @@ const Layout = ({ children }) => {
         <div className={darkTheme ? "dark" : ""}>
             <Head>
                 <script async src="https://f.convertkit.com/ckjs/ck.5.js" />
+                <script
+                    async
+                    defer
+                    data-domain="makemoney.dev"
+                    src="https://plausible.io/js/plausible.js"
+                ></script>
             </Head>
             <div className="flex flex-col min-h-screen bg-white dark:bg-gray-800 p-4">
                 <div className="container mx-auto max-w-3xl lg:max-w-5xl">
