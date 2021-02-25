@@ -16,6 +16,12 @@ const Layout = ({ children }) => {
                     data-domain="makemoney.dev"
                     src="https://plausible.io/js/plausible.js"
                 ></script>
+                <script
+                    async
+                    defer
+                    data-domain="makemoney.dev"
+                    src="https://plausible.io/js/plausible.outbound-links.js"
+                ></script>
             </Head>
             <div className="flex flex-col min-h-screen bg-white dark:bg-gray-800 p-4">
                 <div className="container mx-auto max-w-3xl lg:max-w-5xl">
