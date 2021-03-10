@@ -23,6 +23,11 @@ const Layout = ({ children }) => {
                             data-domain="makemoney.dev"
                             src="https://plausible.io/js/plausible.outbound-links.js"
                         ></script>
+                        <script
+                            data-ad-client="ca-pub-3439028499851395"
+                            async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                        ></script>
                     </>
                 )}
             </Head>
