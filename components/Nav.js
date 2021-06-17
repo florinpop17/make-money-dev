@@ -6,7 +6,7 @@ const urls = [
     { href: "/blog", label: "Blog" },
     // { href: "/daily-updates", label: "Daily Updates" },
     // { href: "/inteviews", label: "Interviews" },
-    { href: "/earnings", label: "Earnings" },
+    // { href: "/earnings", label: "Earnings" },
     { href: "/sponsors", label: "Sponsors" },
     // { href: "/about", label: "About" },
 ];
