@@ -6,6 +6,7 @@ import Post from "./Post";
 import Head from "./Head";
 import Modal from "./Modal";
 import EarningsTile from "./EarningsTile";
+import ProjectBlock from "./ProjectBlock";
 
 export {
     Layout,
@@ -15,5 +16,6 @@ export {
     Post,
     Head,
     EarningsTile,
+    ProjectBlock,
     Modal,
 };

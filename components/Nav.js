@@ -7,6 +7,7 @@ const urls = [
     // { href: "/daily-updates", label: "Daily Updates" },
     // { href: "/inteviews", label: "Interviews" },
     // { href: "/earnings", label: "Earnings" },
+    { href: "/projects", label: "Projects" },
     { href: "/sponsors", label: "Sponsors" },
     // { href: "/about", label: "About" },
 ];
