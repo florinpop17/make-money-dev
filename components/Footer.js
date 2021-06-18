@@ -11,16 +11,10 @@ const Footer = () => (
             </a>
         </p>
         <div className="space-x-4">
-            <a
-                className="mt-4 md:mt-0"
-                target="_blank"
-                href="​https://plausible.io/makemoney.dev"
-            >
+            <a target="_blank" href="https://plausible.io/makemoney.dev">
                 Website Stats
             </a>
-            <a className="mt-4 md:mt-0" href="/privacy">
-                Privacy Policy
-            </a>
+            <a href="/privacy">Privacy Policy</a>
         </div>
     </footer>
 );
