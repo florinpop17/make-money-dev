@@ -7,6 +7,7 @@ import Head from "./Head";
 import Modal from "./Modal";
 import EarningsTile from "./EarningsTile";
 import ProjectBlock from "./ProjectBlock";
+import EarningsProgress from "./EarningsProgress";
 
 export {
     Layout,
@@ -17,5 +18,6 @@ export {
     Head,
     EarningsTile,
     ProjectBlock,
+    EarningsProgress,
     Modal,
 };
