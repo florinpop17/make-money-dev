@@ -1,4 +1,8 @@
-const EarningsProgress = ({ income }) => (
+import sources from "../0-to-100k-earnings";
+
+const income = sources.reduce((acc, item) => (acc += item.income), 0);
+
+const EarningsProgress = () => (
     <div class="w-full">
         <div className="w-full h-10 bg-gray-500 rounded-xl overflow-hidden relative">
             <div

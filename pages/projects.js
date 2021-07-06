@@ -10,7 +10,7 @@ const Projects = () => {
                 image="https://makemoney.dev/images/homepage.png"
             />
             <div className="flex flex-col items-center text-white">
-                <EarningsProgress income={245} />
+                <EarningsProgress />
                 <h1 className="text-5xl lg:text-6xl font-bold mb-8 text-center">
                     Projects
                 </h1>
