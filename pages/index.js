@@ -1,13 +1,14 @@
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
-import Link from "next/link";
 
-import { Layout, HeaderNewsletter, Post } from "../components";
+import { getData } from "../server/notionDB";
+import { Layout, YouTubeLive, HeaderNewsletter, Post } from "../components";
 import { sortByDate } from "../helpers";
 
-const Index = ({ posts }) => (
+const Index = ({ posts, isLive, videoID }) => (
     <Layout>
+        <YouTubeLive isLive={isLive} videoID={videoID} />
         <HeaderNewsletter />
         <div className="mt-16 mb-8">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl text-center">
@@ -40,8 +41,12 @@ const Index = ({ posts }) => (
 );
 
 export async function getStaticProps() {
+    const { isLive, videoID } = await getData();
+
     return {
         props: {
+            isLive,
+            videoID,
             posts: getPosts(),
         },
     };

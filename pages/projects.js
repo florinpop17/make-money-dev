@@ -1,6 +1,7 @@
 import { Layout, Head, ProjectBlock, EarningsProgress } from "../components/";
+import { getData } from "../server/notionDB";
 
-const Projects = () => {
+const Projects = ({ revenue }) => {
     return (
         <Layout>
             <Head
@@ -10,7 +11,7 @@ const Projects = () => {
                 image="https://makemoney.dev/images/homepage.png"
             />
             <div className="flex flex-col items-center text-white">
-                <EarningsProgress />
+                <EarningsProgress revenue={revenue} />
                 <h1 className="text-5xl lg:text-6xl font-bold mb-8 text-center">
                     Projects
                 </h1>
@@ -34,5 +35,17 @@ const Projects = () => {
         </Layout>
     );
 };
+
+export async function getStaticProps() {
+    const { incomes } = await getData();
+
+    const revenue = incomes.reduce((acc, income) => (acc += income.value), 0);
+
+    return {
+        props: {
+            revenue,
+        },
+    };
+}
 
 export default Projects;
