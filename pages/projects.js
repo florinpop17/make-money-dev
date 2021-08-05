@@ -30,6 +30,11 @@ const Projects = ({ revenue }) => {
                         image_url="/images/projects/wdd.png"
                         link="https://weeklydeals.dev/"
                     />
+                    <ProjectBlock
+                        title="Live AMA with industry experts"
+                        image_url="/images/projects/live-ama.png"
+                        link="https://live-ama.com/"
+                    />
                 </div>
             </div>
         </Layout>
