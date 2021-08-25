@@ -1,13 +1,11 @@
 const HeaderNewsletter = () => (
     <form
         className="bg-purple-900 dark:bg-purple-800 shadow-md py-6 rounded-md text-center my-5 p-3"
-        action="https://app.convertkit.com/forms/1746325/subscriptions"
+        action="https://www.getrevue.co/profile/florinpop17/add_subscriber"
         method="post"
-        data-sv-form="1746325"
-        data-uid="790ea1a150"
-        data-format="inline"
-        data-version="5"
-        data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":""},"analytics":{"google":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form"},"recaptcha":{"enabled":true},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
+        id="revue-form"
+        name="revue-form"
+        target="_blank"
     >
         <div className="text-white">
             <div data-element="fields" data-stacked="false" />
@@ -20,12 +18,17 @@ const HeaderNewsletter = () => (
             <div className="my-2 sm:ml-4 lg:flex">
                 <input
                     className="w-full py-3 px-6 rounded mb-4 sm:mb-0 sm:w-auto"
-                    type="email"
                     placeholder="Your Email"
                     aria-label="Your email address"
-                    name="email_address"
+                    type="email"
+                    name="member[email]"
+                    id="member_email"
                 />
-                <button className="w-full bg-purple-700 dark:bg-purple-900 text-white font-semibold py-3 px-6 sm:w-auto sm:ml-2 rounded">
+                <button
+                    className="w-full bg-purple-700 dark:bg-purple-900 text-white font-semibold py-3 px-6 sm:w-auto sm:ml-2 rounded"
+                    name="member[subscribe]"
+                    id="member_submit"
+                >
                     Subscribe
                 </button>
             </div>
