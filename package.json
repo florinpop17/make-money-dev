@@ -8,12 +8,13 @@
         "start": "next start"
     },
     "dependencies": {
+        "@netlify/plugin-nextjs": "^3.9.0",
         "@supabase/supabase-js": "^1.22.4",
         "@tailwindcss/typography": "^0.3.1",
         "autoprefixer": "^10.2.0",
         "dotenv": "^10.0.0",
         "next": "latest",
-        "postcss": "^8.2.2",
+        "postcss": "^8.3.6",
         "react": "^17.0.1",
         "react-dom": "^17.0.1"
     },
