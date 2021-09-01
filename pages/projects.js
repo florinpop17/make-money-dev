@@ -1,7 +1,7 @@
 import { Layout, Head, ProjectBlock, EarningsProgress } from "../components/";
-import { getData } from "../server/notionDB";
+import supabase from "../lib/supabase";
 
-const Projects = ({ revenue }) => {
+const Projects = ({ revenue, resources }) => {
     return (
         <Layout>
             <Head
@@ -24,16 +24,19 @@ const Projects = ({ revenue }) => {
                         title="$0 to $100k Challenge Notes"
                         image_url="/images/projects/notes.png"
                         link="https://gum.co/0-to-100k-notes"
+                        revenue={resources.notes}
                     />
                     <ProjectBlock
                         title="Weekly Deals for Devs"
                         image_url="/images/projects/wdd.png"
                         link="https://weeklydeals.dev/"
+                        revenue={resources.weeklydeals}
                     />
                     <ProjectBlock
                         title="Live AMA with industry experts"
                         image_url="/images/projects/live-ama.png"
                         link="https://live-ama.com/"
+                        revenue={0}
                     />
                 </div>
             </div>
@@ -41,14 +44,33 @@ const Projects = ({ revenue }) => {
     );
 };
 
-export async function getStaticProps() {
-    const { incomes } = await getData();
+export async function getServerSideProps() {
+    const { data: income } = await supabase.from("income").select("*");
 
-    const revenue = incomes.reduce((acc, income) => (acc += income.value), 0);
+    const resources = {
+        weeklydeals: 0,
+        notes: 0,
+    };
+
+    income.forEach((rev) => {
+        switch (rev.resource) {
+            case "Notion Template": {
+                resources.notes += rev.amount;
+                break;
+            }
+            case "WeeklyDeals.dev": {
+                resources.weeklydeals += rev.amount;
+                break;
+            }
+        }
+    });
+
+    const revenue = income.reduce((acc, rev) => (acc += rev.amount), 0);
 
     return {
         props: {
             revenue,
+            resources,
         },
     };
 }
