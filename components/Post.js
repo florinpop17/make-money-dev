@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const PostsListItem = ({ post, path }) => (
+const Post = ({ post, path }) => (
     <Link href={path + post.slug}>
         <a
             className="flex flex-col rounded-lg shadow-lg overflow-hidden transform transition hover:-translate-y-1 hover:shadow-xl"
@@ -32,4 +32,4 @@ const PostsListItem = ({ post, path }) => (
     </Link>
 );
 
-export default PostsListItem;
+export default Post;

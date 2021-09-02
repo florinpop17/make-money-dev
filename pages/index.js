@@ -20,11 +20,7 @@ const Index = ({ posts }) => (
         <div className="flex">
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
                 {posts.map((post) => (
-                    <Post
-                        post={post}
-                        path="/blog/"
-                        key={post.frontmatter.date}
-                    />
+                    <Post post={post} path="/blog/" />
                 ))}
             </div>
         </div>
