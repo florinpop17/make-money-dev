@@ -2,6 +2,7 @@ import React from "react";
 import Head from "./Head";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import TwitchLive from "./TwitchLive";
 
 const isBrowser = typeof window !== "undefined";
 
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
                 )}
             </Head>
             <div className="flex flex-col min-h-screen bg-white dark:bg-gray-800 p-4">
+                <TwitchLive isLive={true} />
                 <div className="container mx-auto max-w-3xl lg:max-w-5xl">
                     <Nav darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
                 </div>

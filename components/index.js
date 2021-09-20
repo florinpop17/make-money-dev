@@ -8,7 +8,7 @@ import Modal from "./Modal";
 import EarningsTile from "./EarningsTile";
 import ProjectBlock from "./ProjectBlock";
 import EarningsProgress from "./EarningsProgress";
-import YouTubeLive from "./YouTubeLive";
+import TwitchLive from "./TwitchLive";
 
 export {
     Layout,
@@ -21,5 +21,5 @@ export {
     ProjectBlock,
     EarningsProgress,
     Modal,
-    YouTubeLive,
+    TwitchLive,
 };
