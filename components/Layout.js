@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
             </Head>
             <div className="flex flex-col min-h-screen bg-white dark:bg-gray-800 p-4">
                 <TwitchLive isLive={true} />
-                <div className="container mx-auto max-w-3xl lg:max-w-5xl">
+                <div className="container mx-auto max-w-3xl lg:max-w-5xl mt-4 md:mt-0">
                     <Nav darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
                 </div>
                 <main className="container mx-auto max-w-3xl lg:max-w-5xl flex-1">
