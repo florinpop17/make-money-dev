@@ -15,7 +15,7 @@ P.S. Monica if you're reading this: Thank you! 🙏 Keep up the good work! 🚀
 
 ## Income Report
 
-**TL;DR**: In the month of August 2021 the total revenue from **7** different sources was: **$20,061.77**
+**TL;DR**: In the month of August 2021 the total revenue from **7** different sources was: **$20,704.74**
 
 Excluding investments, for which I haven't calculated the ROI yes as I still have to learn how to do that. 😆
 
@@ -27,7 +27,7 @@ That aside, let's break the revenue down by project.
 
 I haven't done much to promote the course this month, but Brad did a video on his channel which impacted the number of sales (as expected), bringing in more of them than usual.
 
-**Revenue**: $4,505.19 (_+ Udemy Business revenue incoming_)
+**Revenue**: $5,148.16
 
 #### [eBook - "Ten++ Ways to Make Money as a Developer"](https://florinpop17.gumroad.com/l/makemoneydev)
 
