@@ -11,7 +11,7 @@ A couple of weeks ago I noticed that I have just a little over 1000 days until I
 
 And with pretty much all of my challenges, I wanted to make it public by writing a tweet about it. And this tweet went viral getting over 1500 likes in a day.
 
-Tweet: https://twitter.com/florinpop1705/status/1429399890795302912
+[Tweet](https://twitter.com/florinpop1705/status/1429399890795302912)
 
 ## Why $1,000,000 USD?
 

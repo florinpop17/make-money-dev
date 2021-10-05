@@ -1,9 +1,15 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import marked from "marked";
+import ReactMarkdown from "react-markdown";
+import { TwitterTweetEmbed } from "react-twitter-embed";
+import Link from "next/link";
 
 import { Layout, Sidebar, Newsletter, Head } from "../../components";
+
+function isPathAbsolute(path) {
+    return /^(?:\/|[a-z]+:\/\/)/.test(path);
+}
 
 const Post = ({
     frontmatter: { title, excerpt, date, cover_image },
@@ -25,10 +31,39 @@ const Post = ({
                     <h1 className="text-4xl md:text-5xl font-bold mb-8 dark:text-white text-center md:text-left">
                         {title}
                     </h1>
-                    <div
+                    {/* <div
                         className="prose dark:prose-dark prose-lg xl:prose-xl max-w-none mx-auto md:ml-0"
                         dangerouslySetInnerHTML={{ __html: marked(content) }}
-                    />
+                    /> */}
+                    <div className="prose dark:prose-dark prose-lg xl:prose-xl max-w-none mx-auto md:ml-0">
+                        <ReactMarkdown
+                            components={{
+                                a: (props) => {
+                                    return props.href.startsWith(
+                                        "https://twitter.com"
+                                    ) ? (
+                                        <TwitterTweetEmbed
+                                            tweetId={props.href.split("/")[5]}
+                                        />
+                                    ) : (
+                                        <Link href={props.href}>
+                                            <a
+                                                target={
+                                                    isPathAbsolute(props.href)
+                                                        ? "_blank"
+                                                        : ""
+                                                }
+                                            >
+                                                {props.children}
+                                            </a>
+                                        </Link>
+                                    );
+                                },
+                            }}
+                        >
+                            {content}
+                        </ReactMarkdown>
+                    </div>
                 </div>
                 <Sidebar url={url} title={title} />
             </div>

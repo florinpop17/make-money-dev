@@ -5,7 +5,9 @@ excerpt: "My total revenue in the month of September 2021 as a Content Creator a
 cover_image: "/images/posts/income-report-september-2021.png"
 ---
 
-This is the second Income Report I write since I started the [$1M in 1000 Days challenge](/blog/0-to-1m-in-1000-days). You can check [last month's Income Report here](/blog/income-report-august-2021) in case you missed it.
+This is the second Income Report I write since I started the [$1M in 1000 Days challenge](0-to-1m-in-1000-days). You can check [last month's Income Report here](income-report-august-2021) in case you missed it.
+
+Go check out the [Projects page](/projects).
 
 As mentioned, we took a one-week vacation at the beginning of the month and then I continued my usual schedule with daily streams, BUT, I had a major change:
 
@@ -65,7 +67,9 @@ There are a lot of things which you can do fairly easily involving the chat that
 
 And overall people on Twitch are more likely to support the streamer and they can easily do that (by giving bits and subscribing or gifting a subscription). There are also Prime Subs which people can use for free for their favorite streamer which will get rewarded.
 
-When it comes to YouTube active viewers VS Twitch active viewers... Twitch won by far! [Made a Tweet about it](https://twitter.com/florinpop1705/status/1438181102233980936).
+When it comes to YouTube active viewers VS Twitch active viewers... Twitch won by far! Made a Tweet about it:
+
+[Twitter link](https://twitter.com/florinpop1705/status/1438181102233980936)
 
 Revenue wise, it was still my first month on Twitch so as expected it's not that high, but I hope it will only go upwards from here. We'll have to wait and see though. 🤞
 
