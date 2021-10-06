@@ -6,6 +6,7 @@ import Post from "./Post";
 import Head from "./Head";
 import Modal from "./Modal";
 import EarningsTile from "./EarningsTile";
+import ChallengeTiles from "./ChallengeTiles";
 import ProjectBlock from "./ProjectBlock";
 import EarningsProgress from "./EarningsProgress";
 import TwitchLive from "./TwitchLive";
@@ -18,6 +19,7 @@ export {
     Post,
     Head,
     EarningsTile,
+    ChallengeTiles,
     ProjectBlock,
     EarningsProgress,
     Modal,

@@ -14,8 +14,6 @@ const TwitchLive = () => {
         if (data) {
             setIsLive(data.isOnline);
         }
-
-        console.log("BOOOOYA!");
     }
 
     return isLive ? (

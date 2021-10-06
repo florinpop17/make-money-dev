@@ -1,4 +1,4 @@
-import { Layout, Head, EarningsTile } from "../components/";
+import { Layout, Head, EarningsTile, ChallengeTiles } from "../components/";
 
 function getNumberOfDays(end) {
     const date1 = new Date();
@@ -31,37 +31,7 @@ const Earnings = ({ revenue, resources }) => {
                 <h1 className="text-5xl lg:text-6xl font-bold lg:mt-10 text-center mb-4">
                     Income Streams
                 </h1>
-                <p className="text-xl font-semibold mt-2">
-                    My journey to $1M in 1000 days!
-                </p>
-                <div
-                    className="flex flex-wrap my-4"
-                    style={{ maxWidth: "50rem" }}
-                >
-                    {Array(200)
-                        .fill("")
-                        .map((_, idx) => {
-                            const isActive = idx < Math.floor(revenue / 5000);
-                            return (
-                                <div
-                                    key={idx}
-                                    className={`${
-                                        isActive
-                                            ? "bg-purple-500"
-                                            : "bg-gray-700"
-                                    } rounded`}
-                                    style={{
-                                        width: "1rem",
-                                        height: "1rem",
-                                        margin: "2px",
-                                    }}
-                                ></div>
-                            );
-                        })}
-                </div>
-                <small className="text-gray-300">
-                    *Each tile represents $5k.
-                </small>
+                <ChallengeTiles revenue={revenue} />
 
                 <div className="container mx-auto my-4 space-y-2">
                     <div
@@ -75,7 +45,7 @@ const Earnings = ({ revenue, resources }) => {
                             </h3>
                         </div>
                         <div>
-                            <h2 className="text-3xl ">Total Revenue</h2>
+                            <h2 className="text-3xl ">Total</h2>
                             <h3 className="text-2xl font-semibold mt-2">
                                 {new Intl.NumberFormat("en-EN", {
                                     style: "currency",
