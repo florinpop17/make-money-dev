@@ -31,7 +31,7 @@ const EarningsTile = ({
                     />
                 </Modal>
             )} */}
-            <span className={`absolute top-2 right-2 ${iconColor}`}>
+            {/* <span className={`absolute top-2 right-2 ${iconColor}`}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -48,15 +48,15 @@ const EarningsTile = ({
                     <line x1="12" y1="8" x2="12.01" y2="8" />
                     <polyline points="11 12 12 12 12 16 13 16" />
                 </svg>
-            </span>
+            </span> */}
             <div className="bg-gradient-to-r from-transparent via-white to-transparent w-full h-full absolute top-0 left-0 opacity-30 transform transition-transform duration-700 -translate-x-64 -translate-y-64 scale-150 rotate-45 group-hover:translate-x-64 group-hover:translate-y-64" />
-            <h2 className="text-3xl font-semibold text-center">{name}</h2>
-            <h3 className="text-5xl font-bold mt-2">
+            <h3 className="text-3xl font-semibold text-center">{name}</h3>
+            <h2 className="text-4xl font-bold mt-2">
                 {new Intl.NumberFormat("en-EN", {
                     style: "currency",
                     currency: "USD",
                 }).format(amount)}
-            </h3>
+            </h2>
         </div>
     );
 };
