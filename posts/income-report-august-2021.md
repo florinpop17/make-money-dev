@@ -81,7 +81,7 @@ I also got a sponsor interested in having a multi-week deal. So I created a spon
 
 **Revenue**: $1,875
 
-#### [$0 to $100k Challenge Notes](https://florinpop17.gumroad.com/l/0-to-100k-notes)
+#### [$0 to $100k Challenge Notes](https://florinpop17.gumroad.com/l/1m-1000days)
 
 This is also part of my **#0to100k** challenge. It's a Notion document where I write down pretty much everything that's going on during the challenge. Ideas. ToDos. Recaps. Lessons. Tutorials. Resources. Plans.
 

@@ -5,47 +5,47 @@ import supabase from "../lib/supabase";
 function MyApp({ Component, pageProps }) {
     const [revenue, setRevenue] = useState(0);
     const [resources, setResources] = useState({
-        weeklydeals: {
-            amount: 0,
-            name: "Weekly Deals.dev",
-            bgColor: "#5B21B6",
-            details: "",
-        },
-        notes: {
-            amount: 0,
-            name: "Challenge Notes",
-            bgColor: "#F472B6",
-            details: "",
-        },
         course50projects: {
             amount: 0,
             name: "Udemy Course",
             bgColor: "#A534F0",
-            details: "",
+            link: "https://www.udemy.com/course/50-projects-50-days/?referralCode=684EE5F9DE1745B6428B",
         },
         ebook10ways: {
             amount: 0,
             name: "eBook",
             bgColor: "#663399",
-            details: "",
+            link: "https://florinpop17.gumroad.com/l/makemoneydev",
         },
         youtube: {
             amount: 0,
             name: "YouTube",
             bgColor: "#FF0000",
-            details: "",
+            link: "https://www.youtube.com/florinpop",
         },
         twitch: {
             amount: 0,
             name: "Twitch",
             bgColor: "#6441A4",
-            details: "",
+            link: "https://www.twitch.com/florinpop17",
         },
         sponsors: {
             amount: 0,
             name: "Sponsors",
             bgColor: "#DAA520",
-            details: "",
+            link: "/sponsors",
+        },
+        weeklydeals: {
+            amount: 0,
+            name: "WeeklyDeals.dev",
+            bgColor: "#5B21B6",
+            link: "https://weeklydeals.dev",
+        },
+        notes: {
+            amount: 0,
+            name: "Challenge Notes",
+            bgColor: "#F472B6",
+            link: "https://florinpop17.gumroad.com/l/1m-1000days",
         },
     });
 

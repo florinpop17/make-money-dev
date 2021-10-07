@@ -4,7 +4,7 @@ import marked from "marked";
 import { Modal } from "./";
 
 const EarningsTile = ({
-    source: { name, bgColor, iconColor, details, amount },
+    source: { name, bgColor, iconColor, link, amount },
 }) => {
     const [showModal, setShowModal] = useState(false);
 
@@ -14,10 +14,11 @@ const EarningsTile = ({
     };
 
     return (
-        <div
+        <a
             className={`w-64 h-64 m-4 flex flex-col items-center justify-center rounded-lg shadow-xl relative group overflow-hidden cursor-pointer`}
             style={{ background: bgColor }}
-            onClick={() => setShowModal(true)}
+            href={link}
+            target="_blank"
         >
             {/* {showModal && (
                 <Modal
@@ -31,7 +32,7 @@ const EarningsTile = ({
                     />
                 </Modal>
             )} */}
-            {/* <span className={`absolute top-2 right-2 ${iconColor}`}>
+            <span className={`absolute top-2 right-2 text-white opacity-50`}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -48,7 +49,7 @@ const EarningsTile = ({
                     <line x1="12" y1="8" x2="12.01" y2="8" />
                     <polyline points="11 12 12 12 12 16 13 16" />
                 </svg>
-            </span> */}
+            </span>
             <div className="bg-gradient-to-r from-transparent via-white to-transparent w-full h-full absolute top-0 left-0 opacity-30 transform transition-transform duration-700 -translate-x-64 -translate-y-64 scale-150 rotate-45 group-hover:translate-x-64 group-hover:translate-y-64" />
             <h3 className="text-3xl font-semibold text-center">{name}</h3>
             <h2 className="text-4xl font-bold mt-2">
@@ -57,7 +58,7 @@ const EarningsTile = ({
                     currency: "USD",
                 }).format(amount)}
             </h2>
-        </div>
+        </a>
     );
 };
 

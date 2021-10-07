@@ -85,7 +85,7 @@ We haven't yet reached an agreement, but hopefully we will. Either way, I should
 
 **Revenue**: $0
 
-#### [$0 to $1M Challenge Notes](https://florinpop17.gumroad.com/l/0-to-100k-notes)
+#### [$0 to $1M Challenge Notes](https://florinpop17.gumroad.com/l/1m-1000days)
 
 No promotion at all, just a couple of sales this month.
 
