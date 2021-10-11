@@ -1,4 +1,10 @@
-import { Layout, Head, EarningsTile, ChallengeTiles } from "../components/";
+import {
+    Layout,
+    Head,
+    EarningsTile,
+    ChallengeTiles,
+    Supporters,
+} from "../components/";
 
 function getNumberOfDays(end) {
     const date1 = new Date();
@@ -28,41 +34,47 @@ const Earnings = ({ revenue, resources }) => {
                 image="https://makemoney.dev/images/earnings-page.png"
             />
             <div className="flex flex-col items-center text-white">
-                <h1 className="text-5xl lg:text-6xl font-bold lg:mt-10 text-center mb-4">
-                    Income Streams
-                </h1>
+                <h2 className="text-4xl lg:text-5xl font-bold lg:mt-10 text-center mb-4">
+                    Challenge: $1M in 1000 days
+                </h2>
+
+                <div
+                    className="bg-purple-900 h-40 m-4 grid grid-cols-2 md:grid-cols-3 divide-x divide-purple-500 rounded-lg shadow-xl text-center justify-center content-center mx-auto w-full"
+                    style={{ maxWidth: "50rem" }}
+                >
+                    <div>
+                        <h2 className="text-3xl ">Days Left</h2>
+                        <h3 className="text-2xl font-semibold mt-2">
+                            {daysLeft}
+                        </h3>
+                    </div>
+                    <div>
+                        <h2 className="text-3xl ">Total</h2>
+                        <h3 className="text-2xl font-semibold mt-2">
+                            {new Intl.NumberFormat("en-EN", {
+                                style: "currency",
+                                currency: "USD",
+                            }).format(revenue)}
+                        </h3>
+                    </div>
+                    <div className="hidden md:block">
+                        <h2 className="text-3xl ">Daily Avg.</h2>
+                        <h3 className="text-2xl font-semibold mt-2">
+                            {new Intl.NumberFormat("en-EN", {
+                                style: "currency",
+                                currency: "USD",
+                            }).format(revenue / (1000 - daysLeft))}
+                        </h3>
+                    </div>
+                </div>
+
                 <ChallengeTiles revenue={revenue} />
 
+                <h2 className="text-4xl lg:text-5xl font-bold lg:mt-10 text-center mb-4">
+                    Revenue per project
+                </h2>
+
                 <div className="container mx-auto my-4 space-y-2">
-                    <div
-                        className="bg-purple-900 h-40 m-4 grid grid-cols-2 md:grid-cols-3 divide-x divide-purple-500 rounded-lg shadow-xl text-center justify-center content-center mx-auto"
-                        style={{ maxWidth: "52rem" }}
-                    >
-                        <div>
-                            <h2 className="text-3xl ">Days Left</h2>
-                            <h3 className="text-2xl font-semibold mt-2">
-                                {daysLeft}
-                            </h3>
-                        </div>
-                        <div>
-                            <h2 className="text-3xl ">Total</h2>
-                            <h3 className="text-2xl font-semibold mt-2">
-                                {new Intl.NumberFormat("en-EN", {
-                                    style: "currency",
-                                    currency: "USD",
-                                }).format(revenue)}
-                            </h3>
-                        </div>
-                        <div className="hidden md:block">
-                            <h2 className="text-3xl ">Daily Avg.</h2>
-                            <h3 className="text-2xl font-semibold mt-2">
-                                {new Intl.NumberFormat("en-EN", {
-                                    style: "currency",
-                                    currency: "USD",
-                                }).format(revenue / (1000 - daysLeft))}
-                            </h3>
-                        </div>
-                    </div>
                     <div className="flex flex-wrap justify-center items-center">
                         {Object.keys(resources).map((key) => (
                             <EarningsTile

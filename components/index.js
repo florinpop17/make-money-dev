@@ -10,6 +10,7 @@ import ChallengeTiles from "./ChallengeTiles";
 import ProjectBlock from "./ProjectBlock";
 import EarningsProgress from "./EarningsProgress";
 import TwitchLive from "./TwitchLive";
+import Supporters from "./Supporters";
 
 export {
     Layout,
@@ -24,4 +25,5 @@ export {
     EarningsProgress,
     Modal,
     TwitchLive,
+    Supporters,
 };

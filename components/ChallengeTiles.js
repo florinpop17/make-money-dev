@@ -1,8 +1,5 @@
 const ChallengeTiles = ({ revenue }) => (
     <>
-        <p className="text-xl font-semibold mt-2">
-            My journey to $1M in 1000 days!
-        </p>
         <div className="flex flex-wrap my-4" style={{ maxWidth: "50rem" }}>
             {Array(200)
                 .fill("")
