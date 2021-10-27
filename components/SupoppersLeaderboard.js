@@ -70,12 +70,16 @@ const SupportersLeaderboard = () => {
 
     function getCrown(idx) {
         let color;
+        let position;
         if (idx === 0) {
             color = "#ffec00";
+            position = "-top-6 -left-6";
         } else if (idx === 1) {
             color = "#D7D7D7";
+            position = "-top-5 -left-5";
         } else if (idx === 2) {
             color = "#824A02";
+            position = "-top-4 -left-4";
         } else {
             // no crown for you sir/madam
             return null;
@@ -84,9 +88,7 @@ const SupportersLeaderboard = () => {
         return (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`absolute -top-${6 - idx} -left-${
-                    6 - idx
-                } transform -rotate-45`}
+                className={`absolute ${position} transform -rotate-45`}
                 width={48 - idx * 6}
                 height={48 - idx * 6}
                 viewBox="0 0 24 24"

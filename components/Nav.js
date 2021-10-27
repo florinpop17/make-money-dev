@@ -8,7 +8,8 @@ const urls = [
     // { href: "/inteviews", label: "Interviews" },
     { href: "/earnings", label: "Earnings" },
     { href: "/projects", label: "Projects" },
-    { href: "/sponsors", label: "Sponsors" },
+    // { href: "/sponsors", label: "Sponsors" },
+    { href: "/supoppers", label: "Supoppers" },
     // { href: "/about", label: "About" },
 ];
 
