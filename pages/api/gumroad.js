@@ -17,6 +17,8 @@ export default async function handler(req, res) {
     const { short_product_id, price, email, Link, Name, license_key } =
         req.body;
 
+    console.log(req.body);
+
     // check if is the right product
     if (productID === short_product_id) {
         let supopper_id;
@@ -51,7 +53,7 @@ export default async function handler(req, res) {
             supopper_id,
         };
 
-        add_transaction(transaction);
+        await add_transaction(transaction);
     }
 
     return res.status(200).send({ success: true });
@@ -60,9 +62,12 @@ export default async function handler(req, res) {
 async function add_transaction(transaction) {
     const { error, data } = await supabase
         .from("supoppers_transactions")
-        .insert(transaction);
+        .insert(transaction)
+        .single();
 
     if (error) {
         console.error(error);
+    } else {
+        console.log("SAVED", data);
     }
 }
