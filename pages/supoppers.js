@@ -24,8 +24,7 @@ const Supoppers = () => (
                 </a>
             </div>
 
-            <p className="text-white text-2xl text-center">Leaderboard WIP</p>
-            {/* <SupoppersLeaderboard /> */}
+            <SupoppersLeaderboard />
         </div>
     </Layout>
 );

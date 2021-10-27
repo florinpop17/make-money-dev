@@ -1,109 +1,119 @@
-const supporters = [
-    {
-        name: "Florin Pop",
-        link: "https://florin-pop.com",
-        amount: 200,
-    },
-    {
-        name: "Lil Shakee",
-        link: "https://lil-shakee.com",
-        amount: 100,
-    },
-    {
-        name: "Vannesh",
-        link: "https://vannesh.supercool.com",
-        amount: 50,
-    },
-    {
-        name: "Chris Sean",
-        link: "https://chris-sean.io",
-        amount: 25,
-    },
-    {
-        name: "Vid",
-        link: "https://vido.co",
-        amount: 10,
-    },
-];
+import { useState, useEffect } from "react";
+import supabase from "../lib/supabase";
 
-supporters.sort((a, b) => b.amount - a.amount);
+const SupportersLeaderboard = () => {
+    const [supoppers, setSupoppers] = useState([]);
 
-const SupportersLeaderboard = () => (
-    <div className="container text-white">
-        <div className="flex items-end justify-center space-x-2">
-            <div className="w-48 h-36 bg-purple-700 flex flex-col justify-center items-center shadow-lg rounded-t-xl">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="crown"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#D7D7D7"
-                    fill="#D7D7D7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z"></path>
-                </svg>
-                <p className="text-3xl font-semibold">{supporters[1].name}</p>
-                <p className="text-2xl font-semibold">
-                    ${supporters[1].amount}
-                </p>
-            </div>
+    useEffect(() => {
+        getSupoppers();
 
-            <div className="w-48 h-48 bg-purple-700 flex flex-col justify-center items-center shadow-lg rounded-t-xl">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="crown"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#ffec00"
-                    fill="#ffec00"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z"></path>
-                </svg>
+        // const supscription = supabase
+        //     .from("supoppers_transactions")
+        //     .on("INSERT", (payload) => {
+        //         const { price, supopper_id, name, link } = payload.new;
+        //         const transaction = { price, name, link };
 
-                <p className="text-4xl font-semibold">{supporters[0].name}</p>
-                <p className="text-3xl font-semibold">
-                    ${supporters[0].amount}
-                </p>
-            </div>
+        //         setTransactions((prevTransactions) => [
+        //             ...prevTransactions,
+        //             transaction,
+        //         ]);
+        //     })
+        //     .subscribe();
 
-            <div className="w-48 h-28 bg-purple-700 flex flex-col justify-center items-center shadow-lg rounded-t-xl">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="crown"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#824A02"
-                    fill="#824A02"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z"></path>
-                </svg>
-                <p className="text-2xl font-semibold">{supporters[2].name}</p>
-                <p className="text-xl font-semibold">${supporters[2].amount}</p>
-            </div>
-        </div>
-        <ul>
-            {supporters.slice(3).map((supporter) => (
-                <li>
-                    {supporter.name} - {supporter.amount}
-                </li>
-            ))}
+        // return () => supabase.removeSubscription(supscription);
+    }, []);
+
+    async function getSupoppers() {
+        const supoppers = [];
+        const supoppersObj = {};
+
+        const { data: transactions } = await supabase
+            .from("supoppers_transactions")
+            .select("name, link, price, supopper_id");
+
+        transactions.forEach((transaction) => {
+            const { supopper_id, name, price, link } = transaction;
+            if (supoppersObj[supopper_id]) {
+                supoppersObj[supopper_id] = {
+                    name,
+                    link,
+                    price: supoppersObj[supopper_id].price + price,
+                };
+            } else {
+                supoppersObj[supopper_id] = {
+                    name,
+                    link,
+                    price,
+                };
+            }
+        });
+
+        Object.keys(supoppersObj).forEach((key) => {
+            supoppers.push(supoppersObj[key]);
+        });
+
+        supoppers.sort((a, b) => b.price - a.price);
+
+        setSupoppers(supoppers);
+    }
+
+    function getColorByIdx(idx) {
+        if (idx === 0) {
+            return "bg-purple-500 text-2xl";
+        } else if (idx === 1) {
+            return "bg-purple-600 text-xl";
+        } else if (idx === 2) {
+            return "bg-purple-700 text-lg";
+        }
+        return "bg-purple-900";
+    }
+
+    return (
+        <ul className="text-white text-center max-w-md overflow-hidden mx-auto space-y-1">
+            {supoppers.map((supopper, idx) => {
+                return (
+                    <li
+                        className={`flex justify-between p-4 font-semibold rounded shadow ${getColorByIdx(
+                            idx
+                        )}`}
+                    >
+                        {idx < 3 ? (
+                            <a
+                                className="flex items-center hover:underline"
+                                href={supopper.link}
+                                target="_blank"
+                            >
+                                {supopper.name}
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="ml-2"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="#ffffff"
+                                    fill="none"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
+                                    <path
+                                        stroke="none"
+                                        d="M0 0h24v24H0z"
+                                        fill="none"
+                                    />
+                                    <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                                    <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                                </svg>
+                            </a>
+                        ) : (
+                            <span>{supopper.name}</span>
+                        )}
+                        <span>${supopper.price / 100}</span>
+                    </li>
+                );
+            })}
         </ul>
-    </div>
-);
+    );
+};
 
 export default SupportersLeaderboard;
