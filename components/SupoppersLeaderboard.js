@@ -57,7 +57,7 @@ const SupportersLeaderboard = () => {
         setSupoppers(supoppers);
     }
 
-    function getColorByIdx(idx) {
+    function getStylesByIdx(idx) {
         if (idx === 0) {
             return "bg-purple-500 text-2xl";
         } else if (idx === 1) {
@@ -103,11 +103,11 @@ const SupportersLeaderboard = () => {
     }
 
     return (
-        <ul className="text-white text-center max-w-md mx-auto space-y-2">
+        <ul className="text-white text-center max-w-md mx-auto space-y-1">
             {supoppers.map((supopper, idx) => {
                 return (
                     <li
-                        className={`flex justify-between p-4 font-semibold rounded shadow relative ${getColorByIdx(
+                        className={`flex justify-between p-4 font-semibold rounded shadow relative ${getStylesByIdx(
                             idx
                         )}`}
                     >
