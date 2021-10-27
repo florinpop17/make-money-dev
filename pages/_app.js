@@ -5,6 +5,12 @@ import supabase from "../lib/supabase";
 function MyApp({ Component, pageProps }) {
     const [revenue, setRevenue] = useState(0);
     const [resources, setResources] = useState({
+        supoppers: {
+            amount: 0,
+            name: "Supoppers",
+            bgColor: "orangered",
+            link: "/supoppers",
+        },
         course50projects: {
             amount: 0,
             name: "Udemy Course",
@@ -58,6 +64,11 @@ function MyApp({ Component, pageProps }) {
 
         income.forEach((rev) => {
             switch (rev.resource) {
+                case "Supoppers": {
+                    resources.supoppers.amount += rev.amount;
+                    break;
+                }
+
                 case "Notion Template": {
                     resources.notes.amount += rev.amount;
                     break;

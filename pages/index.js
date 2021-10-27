@@ -1,9 +1,5 @@
-import path from "path";
-import fs from "fs";
-import matter from "gray-matter";
-
 import { Layout, HeaderNewsletter, Post } from "../components";
-import { sortByDate } from "../helpers";
+import { getPosts } from "../lib/api";
 
 const Index = ({ posts }) => (
     <Layout>
@@ -41,25 +37,5 @@ export async function getStaticProps() {
         },
     };
 }
-
-const getPosts = () => {
-    const files = fs.readdirSync(path.join("posts"));
-
-    const posts = files.map((filename) => {
-        const slug = filename.replace(".md", "");
-        const markdownWithMetadata = fs.readFileSync(
-            path.join("posts", filename),
-            "utf-8"
-        );
-
-        const { data: frontmatter } = matter(markdownWithMetadata);
-        return {
-            slug,
-            frontmatter,
-        };
-    });
-
-    return posts.sort(sortByDate).slice(0, 6);
-};
 
 export default Index;

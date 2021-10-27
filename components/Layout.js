@@ -14,10 +14,8 @@ const Layout = ({ children }) => {
             <Head>
                 {isBrowser && (
                     <>
-                        <script
-                            async
-                            src="https://f.convertkit.com/ckjs/ck.5.js"
-                        />
+                        <script src="https://gumroad.com/js/gumroad.js"></script>
+
                         <script
                             async
                             defer

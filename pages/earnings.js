@@ -1,10 +1,4 @@
-import {
-    Layout,
-    Head,
-    EarningsTile,
-    ChallengeTiles,
-    Supporters,
-} from "../components/";
+import { Layout, Head, EarningsTile, ChallengeTiles } from "../components/";
 
 function getNumberOfDays(end) {
     const date1 = new Date();

@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar";
 import HeaderNewsletter from "./HeaderNewsletter";
 import Newsletter from "./Newsletter";
 import Post from "./Post";
+import Author from "./Author";
 import Head from "./Head";
 import Modal from "./Modal";
 import EarningsTile from "./EarningsTile";
@@ -10,7 +11,7 @@ import ChallengeTiles from "./ChallengeTiles";
 import ProjectBlock from "./ProjectBlock";
 import EarningsProgress from "./EarningsProgress";
 import TwitchLive from "./TwitchLive";
-import Supporters from "./Supporters";
+import SupoppersLeaderboard from "./SupoppersLeaderboard";
 
 export {
     Layout,
@@ -18,6 +19,7 @@ export {
     HeaderNewsletter,
     Newsletter,
     Post,
+    Author,
     Head,
     EarningsTile,
     ChallengeTiles,
@@ -25,5 +27,5 @@ export {
     EarningsProgress,
     Modal,
     TwitchLive,
-    Supporters,
+    SupoppersLeaderboard,
 };
