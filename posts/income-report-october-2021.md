@@ -113,7 +113,7 @@ No promotion at all, just a couple of sales this month.
 
 **Revenue**: $40
 
-### [Sponsors]
+#### Sponsors
 
 I didn't take any sponsorship offers this month, mostly due to my poor management skills and lack of time/energy/focus. Having to deal with several things at once while not having a good system in place to probably automate what can be automated is definitely bitting into my profits. I hope I can change this quickly.
 
