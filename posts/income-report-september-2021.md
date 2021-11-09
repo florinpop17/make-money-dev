@@ -25,7 +25,7 @@ Alright, with that out of the way, let's get into this month's Income Report. ðŸ
 
 ## Income Report
 
-**TL;DR**: The total revenue this month from **6** different sources was: **$7,328.28**
+**TL;DR**: The total revenue this month from **6** different sources was: **$7,776.97**
 
 ### Breakdown by Project
 
@@ -35,7 +35,7 @@ The revenue from the course dropped as we haven't promoted it in any way because
 
 Eventually it would be nice to set up some sort of funnel which will bring in new sales (on automation mode ðŸ¤–), but as of now we don't have such a thing so it's all just passive income, which is not bad, but it could be better with some extra work.
 
-**Revenue**: $2,629.11 (_+ Udemy Business revenue incoming_)
+**Revenue**: $3,077.80
 
 #### [eBook - "Ten++ Ways to Make Money as a Developer"](https://florinpop17.gumroad.com/l/makemoneydev)
 
